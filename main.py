@@ -1,6 +1,5 @@
 import sys
 
-from PySide2.QtCore import QSize
 from PySide2.QtWidgets import QApplication, QVBoxLayout, QWidget, QPushButton, QListWidget, QHBoxLayout, QLabel, QComboBox, QListWidgetItem
 import qtawesome as qta
 
@@ -12,8 +11,6 @@ class DropDownList(QWidget):
         self.item = item
         layout = QHBoxLayout()
         self.cb = QComboBox()
-        self.cb.addItem(f"No {self.item}")
-
         layout.addWidget(self.cb)
         self.setLayout(layout)
 
